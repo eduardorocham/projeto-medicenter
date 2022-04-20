@@ -171,6 +171,13 @@ nav a:hover {
     margin-bottom: 20px;
 }
 
+.departament {
+    background-color: #36a9e1;
+    min-width: 155px;
+    min-height: 155px;
+    margin: 5px;
+}
+
 .widget-title-text {
     color: black;
     font-weight: bold;
@@ -182,6 +189,25 @@ nav a:hover {
     width: 50px;
     background-color: #36a9e1;
     margin-top: 10px;
+}
+
+.wb-text {
+    font-size: 13px;
+    color: #5c5c5c;
+    line-height: 20px;
+    margin-bottom: 30px;
+}
+
+.wb-contact {
+    font-size: 13px;
+    color: #5c5c5c;
+    border-top: 1px solid #5c5c5c;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.border {
+    border-bottom: 1px solid #5c5c5c;
 }
 
 .flex {
@@ -245,6 +271,7 @@ article .news_resume {
     flex-direction: column;
 }
 
+
 footer {
     background-color: #1e1e1e;
     display: flex;
@@ -298,14 +325,6 @@ footer .widget-title-text {
 footer .widget-body {
     display: flex;
     padding-right: 20px;
-}
-
-.departament {
-    background-color: #36a9e1;
-    min-width: 60px;
-    min-height: 60px;
-    margin-bottom: 12px;
-    margin-right: 12px;
 }
 
 footer .widget-body-section {
