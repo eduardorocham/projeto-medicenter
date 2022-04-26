@@ -380,6 +380,10 @@ footer .widget-body-data {
     background-color: #39AAE1;
 }
 
+.display_flex {
+    display: flex;
+}
+
 @media (max-width: 600px) {
     .banner-headline {
         padding: 20px;

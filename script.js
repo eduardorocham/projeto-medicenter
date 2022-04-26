@@ -1,7 +1,8 @@
 function mostrarMenu() {
-    if (document.getElementsByTagName("ul").style.display == 'none') {
-        document.getElementsByTagName("ul").style.display= 'flex'; 
+    let menu = document.querySelector('.mobile');
+    if (menu.classList.contains('display_flex')) {
+        menu.classList.remove('display_flex');
     } else {
-        document.getElementsByTagName("ul").style.display= 'none';
+        menu.classList.add('display_flex');
     }
 }
