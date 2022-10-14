@@ -60,6 +60,7 @@ nav a:hover {
 
 .banner-slide {
     overflow: hidden;
+    position: relative;
 }
 
 .slides {
@@ -161,6 +162,27 @@ nav a:hover {
     padding: 5px;
     font-size: 13px;
     text-decoration: none;
+}
+
+.setas {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+    background: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.setas button {
+    border: 0;
+    background: 0;
+    cursor: pointer;
+}
+
+.setas img {
+    width: 64px;
 }
 
 .oppening1 {

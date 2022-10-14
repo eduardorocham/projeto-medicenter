@@ -19,6 +19,14 @@ function goNext () {
     updateMargin();
 }
 
+function goPrev () {
+    currentSlide--;
+    if (currentSlide == 0) {
+        currentSlide = 2
+    }
+    updateMargin();
+}
+
 function updateMargin () {
     let newMargin = currentSlide * 100;
     document.querySelector('.slides').style.marginLeft = `-${newMargin}vw`
