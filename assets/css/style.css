@@ -216,21 +216,137 @@ nav a:hover {
     flex: 1;
 }
 
+.widget-body-articles {
+    max-height: 1095px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.first-article {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.second-article {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.third-article {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-template-columns: 2;
+}
+
+.fourth-article {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
 .widget-title {
     margin-top: 30px;
     margin-bottom: 20px;
 }
 
+.widget-body-departaments a {
+    text-decoration: none;
+}
+
 .departament {
-    background-color: #36a9e1;
+    background-color: #FFF;
     min-width: 155px;
-    min-height: 155px;
-    margin: 5px;
+    margin-bottom: 5px;
+    box-sizing: content-box;
+}
+
+.departament-title.blueTitle {
+    background-color: #2b4c99;
+    color: #FFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+}
+
+.departament-title.blueTitle h3 {
+    font-size: 16px;
+    color: #FFF;
+}
+
+.departament-title {
+    background-color: transparent;
+    border-bottom: 1px solid #999;
+    color: #FFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+}
+
+.departament-title h3 {
+    font-weight: normal;
+    font-size: 16px;
+    color: #999;
+}
+
+.departament-body.show {
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.departament-body {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.departament-body-info {
+    display: flex;
+}
+
+.departament-body img {
+    width: 75px;
+    height: 75px;
+    margin-right: 10px;
+}
+
+.departament-body-desc {
+    font-size: 14px;
+    color: #666;
+}
+
+.departament-buttons {
+    display: flex;
+    justify-content: end;
+}
+
+.departament-buttons button {
+    background-color: #2b4c99;
+    color: #FFF;
+    cursor: pointer;
+    border: 0;
+    padding: 5px;
+    margin: 1px;
+}
+
+.departament-buttons button:hover {
+    background-color: #36a9e1;
 }
 
 .widget-title-text {
     color: black;
-    font-weight: bold;
+    font-weight: normal;
     font-size: 21px;
 }
 
@@ -304,8 +420,7 @@ article img {
 }
 
 article .news_title {
-    margin-top: 25px;
-    margin-bottom: 25px;
+    margin: 20px 0;
     color: black;
     font-size: 23px;
 }
@@ -315,6 +430,18 @@ article .news_resume {
     font-size: 14px;
     line-height: 20px;
     margin-bottom: 30px;
+}
+
+article .news_posted {
+    font-size: 10px;
+    color: #5c5c5c;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #d7d7d7;
+}
+
+article .news_posted span {
+    text-decoration: underline;
 }
 
 .flexcolumns {
