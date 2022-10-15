@@ -365,11 +365,21 @@ nav a:hover {
 }
 
 .wb-contact {
+    display: flex;
+    align-items: center;
     font-size: 13px;
     color: #5c5c5c;
     border-top: 1px solid #5c5c5c;
     padding-top: 10px;
     padding-bottom: 10px;
+}
+
+.wb-contact span img {
+    width: 29px;
+    height: 29px;
+    object-fit: cover;
+    object-position: top;
+    margin-right: 5px;
 }
 
 .border {
