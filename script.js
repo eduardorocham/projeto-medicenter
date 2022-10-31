@@ -34,3 +34,14 @@ function updateMargin () {
 
 setInterval(goNext, 4000);
 
+//Departaments
+
+function changeShow() {
+    let departament = document.querySelectorAll('.departament-body');
+    for (let i in departament) {
+        if (departament[i].classList.contains('show')) {
+            departament[i].classList.remove('show');
+        }
+    };
+}
+
